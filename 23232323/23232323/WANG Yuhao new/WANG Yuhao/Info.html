@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>基于Java的校园失物信息共享平台</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/7aboutus.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+	<script src="js/Times.js"></script>
+</head>
+<body>
+<!-- header分区 -->
+<header>
+	<div class="container">
+    	<div class="time fl">
+        	<span class="hours"></span>
+            <br/>
+            <span class="date"></span>
+        </div>
+        
+    </div>
+</header>
+<!-- logo分区 -->
+<div class="logo">
+	<div class="container">
+        <h1 class="fl logo_img">
+        	<img src="image/logo_top.png" width="50px" height="50px" class="img-responsive" alt="">
+        </h1>
+        <div class="search fr">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入您要查找的物品名称">
+                <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- nav分区 -->
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="1findOwner.html">I lost</a></li>
+            <li><a href="2findThings.html">I  found</a></li>
+            <li><a href="5thanksLetter.html">Thanks letter</a></li>
+            <li ><a href="7aboutUs.html">Info</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- content分区 -->
+<section>
+	<div class="container">
+        <div class="list-group" id="listHeader">
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">
+                    <span>About us</span>
+                    <ol class="breadcrumb fr">
+                        <li>Your location：</li>
+                        <li>About us</li>
+                        <li>Details:</li>
+                    </ol>
+                </h4>
+            </div>        
+            <div class="list-group-item">
+            	<div class="introduce">
+                	
+                <p> We are an organisation of the Hong Kong Polytechnic University dedicated to solving various life problems encountered by students. In this case, we have chosen to create such a website to help students find their lost items, in the hope that this will reduce the distress of students' lives.</p>
+                </br>
+            </br>
+        </br>
+    </br>
+                <p>We hope that more and more people will join our organisation in the future, so that we can provide better assistance to the students of Hong Kong Polytechnic University</p>
+            </div>
+                <div style="text-align: right;">
+                	<br>
+                    <hr>
+                	<p style=" padding-right:50px; box-sizing: border-box;">Hong Kong Polytechnic University Student Help Centre</p>
+                    <br>
+                	
+                </div>
+            </div>        
+        </div>
+	</div>
+    
+</section>
+<!-- footer分区 -->
+<footer>
+	<div class="footer">	
+        <div class="container">
+            <ul>
+                
+                <li><a href="#">About us</a></li>
+                
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+    	<p>Hong Kong Polytechnic University-lost and found</p>
+        
+        <p>Author Telephone number：+ 852 9705 3005</p>
+        <p>Author name: Loyce</p>
+        <p>designer: loyce</p>
+    </div>
+</footer>
+<script src="js/cookie.js"></script>
+<script src="js/userInfo.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	$(".hours").jtime({
+		format: "HH:mm"
+	});
+	$(".date").jtime({
+		format: "yyyy-MM-dd  星期W"
+	})
+});
+</script>
+
+</body>
+</html>
