@@ -12,13 +12,13 @@
     <div class="container">
       <div class="blueBg">
         <div class="box signin">
-          <h2>If you are a user?</h2>
-          <button class="signinBtn">Sign in</button>
+          <h2>If you are an admin?</h2>
+          <button class="signinBtn">Admin Sign in</button>
 		 
         </div>
         <div class="box signup">
-          <h2>If you are an admin?</h2>
-          <button class="signupBtn">Sign up</button>
+          <h2>If you are an user?</h2>
+          <button class="signupBtn">User Sign in</button>
 		  
         </div>
       </div>
@@ -27,24 +27,22 @@
           <form action="">
             <div class="login_center">
               <div class="login_top">
-                <div class="left fl">Login with user</div>
+                <div class="left fl">Login with Admin</div>
                 <div class="right fr">If you are not our user? Register now!<a href="./register.html" target="_self">Register!</a></div>
                 <div class="clear"></div>
                 <div class="xian center"></div>
               </div>
               <div class="login_main center">
-                <div class="username" id="UN">User Name:&nbsp;<input class="shurukuang" type="text" name="username" placeholder="Please input your userr name"/></div>
-                <div class="username" id="PW">Password:&nbsp;<input class="shurukuang" type="password" name="password" placeholder="Please input your password:"/></div>
+                <div class="username" id="UN">User Name:&nbsp;<input class="shurukuang" type="text" id="adminusername" name="username" placeholder="Please input your userr name"/></div>
+                <div class="username" id="PW">Password:&nbsp;<input class="shurukuang" type="password" id="adminpassword" name="password" placeholder="Please input your password:"/></div>
                 <div class="username">
-                  <div class="left fl">Verification code:&nbsp;<input class="yanzhengma" type="text" name="username" placeholder="请输入验证码"/></div>
-                  <div class="right fl"><img src="./image/yanzhengma.jpg"></div>
-                  <div class="right fr">If you forget your password? Please click me!<a href="./login copy.html" target="_self">Register!</a></div>
-                  <div class="clear"></div>
+                </div>
+                <div class="login_submit">
+                  <input class="submit" type="submit" name="submit" value="Login" id="adminsignin">
                 </div>
               </div>
-              <div class="login_submit">
-                <input class="submit" type="submit" name="submit" value="Register!" >
-              </div>
+              
+
               
             </div>
           </form>
@@ -53,23 +51,19 @@
           <form action="">
             <div class="login_center">
               <div class="login_top">
-                <div class="left fl">Login with admin</div>
+                <div class="left fl">Login with User</div>
                 <div class="right fr">If you are not our user? Register now!<a href="./login copy.html" target="_self">Register!</a></div>
                 <div class="clear"></div>
                 <div class="xian center"></div>
               </div>
               <div class="login_main center">
-                <div class="username">User Name:&nbsp;<input class="shurukuang" type="text" name="username" placeholder="Please input your userr name"/></div>
-                <div class="username">Password:&nbsp;<input class="shurukuang" type="password" name="password" placeholder="Please input your password:"/></div>
+                <div class="username">User Name:&nbsp;<input class="shurukuang" type="text" id="username" name="username" placeholder="Please input your userr name"/></div>
+                <div class="username">Password:&nbsp;<input class="shurukuang" type="password" id="userpassword" name="password" placeholder="Please input your password:"/></div>
                 <div class="username">
-                  <div class="left fl">Verification code:&nbsp;<input class="yanzhengma" type="text" name="username" placeholder="请输入验证码"/></div>
-                  <div class="right fl"><img src="./image/yanzhengma.jpg"></div>
-                  <div class="right fr">If you forget your password? Please click me!<a href="./login copy.html" target="_self">Password!</a></div>
-                  <div class="clear"></div>
                 </div>
               </div>
               <div class="login_submit">
-                <input class="submit" type="submit" name="submit" value="Register!" >
+                <input class="submit" type="submit" name="submit" value="Login" id="usersignin">
               </div>
               
             </div>
@@ -77,7 +71,9 @@
         </div>
       </div>
     </div>
-
+    <script language="JavaScript" type="text/javascript" src="/js/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+    <script type="module" src="login.js"></script>
     <script>
       const signinBtn = document.querySelector('.signinBtn');
       const signupBtn = document.querySelector('.signupBtn');
